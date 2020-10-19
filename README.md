@@ -17,4 +17,4 @@ Project có 2 chương trình từ điển:
       
 Run và Built chương trình:
   1. Dictionary Commandline: chạy file src/dictionary_commandline/Main.java
-  2. Dictionary Application: chạy file src/DictionaryApp/DictionaryApplication.java hoặc out/artifacts/DictionaryAppFX_jar
+  2. Dictionary Application: chạy file src/DictionaryApp/DictionaryApplication.java
