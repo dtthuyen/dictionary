@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<!--suppress ALL -->
+
+<VBox fx:id="DrawerMenu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="490.0" prefWidth="170.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DictionaryApp.ModeController">
+   <children>
+      <ImageView fitHeight="90.0" fitWidth="190.0" focusTraversable="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@googlebanner.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="ButtonHome" onAction="#onClickButtonToHome" prefHeight="32.0" prefWidth="170.0" text=" Dict Offline">
+         <font>
+            <Font name="Product Sans" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@book.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="ButtonGoogle" onAction="#onClickButtonToGoogle" prefHeight="32.0" prefWidth="170.0" text=" Dict Online">
+         <font>
+            <Font name="Product Sans" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@searchs.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="ButtonGoogleTranslate" onAction="#onClickButtonToGoogleTranslate" prefHeight="39.0" prefWidth="172.0" text=" Viet-Eng Dict">
+         <font>
+            <Font name="Product Sans" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="45.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@google.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</VBox>

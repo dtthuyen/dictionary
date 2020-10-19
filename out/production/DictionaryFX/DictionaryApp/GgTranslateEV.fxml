@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="533.0" prefWidth="535.0" style="-fx-background-color: #FFF8DC;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DictionaryApp.GoogleTranslateController">
+    <top>
+        <AnchorPane fx:id="topBar" prefHeight="43.0" prefWidth="300.0" style="-fx-background-color: #880000;" BorderPane.alignment="CENTER">
+            <children>
+                <JFXHamburger fx:id="hamburger" layoutX="20.0" layoutY="12.0" />
+                <Text fill="WHITE" layoutX="68.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="English - Vietnamese Dictionary Online">
+                    <font>
+                        <Font name="Product Sans Bold" size="18.0" />
+                    </font>
+                </Text>
+            </children>
+        </AnchorPane>
+    </top>
+    <left>
+        <Pane prefHeight="490.0" prefWidth="190.0" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="125.0" fitWidth="140.0" layoutX="43.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@logovnu.png" />
+                    </image>
+                </ImageView>
+                <Text layoutX="34.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="----- Tra từ Online -----">
+                    <font>
+                        <Font name="Product Sans Italic" size="15.0" />
+                    </font>
+                </Text>
+                <Text layoutX="34.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chú ý: Hãy kết nối Internet">
+                    <font>
+                        <Font name="Product Sans Italic" size="13.0" />
+                    </font>
+                </Text>
+                <Text layoutX="34.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="để tra từ.">
+                    <font>
+                        <Font name="Product Sans Italic" size="13.0" />
+                    </font>
+                </Text>
+                <Text layoutX="34.0" layoutY="335.0" strokeType="OUTSIDE" strokeWidth="0.0" text="______________">
+                    <font>
+                        <Font name="Product Sans Bold" size="12.0" />
+                    </font>
+                </Text>
+                <Text layoutX="34.0" layoutY="355.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cảm ơn đã sử dụng Từ điển!">
+                    <font>
+                        <Font name="Product Sans Bold" size="12.0" />
+                    </font>
+                </Text>
+                <Text layoutX="34.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" text="By Dinh Thi Thanh Huyen">
+                    <font>
+                        <Font name="Product Sans Bold" size="12.0" />
+                    </font>
+                </Text>
+                <Text layoutX="34.0" layoutY="395.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MSSV: 19020560 - K64K1">
+                    <font>
+                        <Font name="Product Sans Italic" size="12.0" />
+                    </font>
+                </Text>
+                <Text layoutX="34.0" layoutY="415.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lớp: INT2204 6 - N2">
+                    <font>
+                        <Font name="Product Sans Italic" size="12.0" />
+                    </font>
+                </Text>
+                <Text layoutX="34.0" layoutY="425.0" strokeType="OUTSIDE" strokeWidth="0.0" text="_______________________________">
+                    <font>
+                        <Font name="Product Sans Bold" size="12.0" />
+                    </font>
+                </Text>
+                
+                <JFXDrawer fx:id="drawer" defaultDrawerSize="170.0" layoutX="1.0" layoutY="-1.0" prefHeight="0.0" prefWidth="170.0" />
+            </children>
+        </Pane>
+    </left>
+    <center>
+        <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <TextField fx:id="inputWord" layoutX="35.0" layoutY="40.0" onAction="#onClickedTranslateEV" prefHeight="120.0" prefWidth="286.0">
+                    <font>
+                        <Font name="Product Sans Bold" size="18.0" />
+                    </font>
+                </TextField>
+                <TextArea fx:id="outputWord" layoutX="35.0" layoutY="210.0" prefHeight="225.0" prefWidth="286.0">
+                    <font>
+                        <Font name="Product Sans Bold" size="12.0" />
+                    </font></TextArea>
+                <JFXButton fx:id="translate" buttonType="RAISED" layoutX="36.0" layoutY="168.0" onAction="#onClickedTranslateEV" style="-fx-background-color: #00FA9A;" text="Translate">
+                    <font>
+                        <Font name="Product Sans Bold" size="14.0" />
+                    </font>
+                </JFXButton>
+                <JFXButton layoutX="275.0" layoutY="2.0" onAction="#onClickSpeakerButtonInput" prefHeight="31.0" prefWidth="48.0">
+                    <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@speaker.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </JFXButton>
+                <JFXButton layoutX="275.0" layoutY="172.0" onAction="#onClickSpeakerButtonOutput" prefHeight="31.0" prefWidth="48.0">
+                    <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@speaker.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </JFXButton>
+                <Label layoutX="40.0" layoutY="10.0" text=" Nhập từ hoặc văn bản Tiếng Anh:">
+                    <font>
+                        <Font name="Product Sans" size="15.0" />
+                    </font>
+                </Label>
+                <Label layoutX="120.0" layoutY="175.0" text="Dịch sang Tiếng Việt:">
+                    <font>
+                        <Font name="Product Sans" size="15.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+    </center>
+</BorderPane>
