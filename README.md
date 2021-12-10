@@ -1,8 +1,4 @@
 # dictionaryOOP_by_dtthuyen
-Bài tập lớn môn Lập trình hướng đối tượng
-Lớp INT2204 6 - N2
-Sinh viên: Đinh Thị Thanh Huyền
-MSSV: 19020560
 
 Project có 2 chương trình từ điển:
   1. Dictionary Commandline: từ điển sơ khai, không sử dụng giao diện đồ họa
